@@ -8,3 +8,5 @@ sass_dir: _compass
 images_dir: a/i
 javascripts_dir: a/j
 fonts_dir: a/f
+
+relative_assets: false
