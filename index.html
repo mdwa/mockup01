@@ -1,0 +1,33 @@
+---
+layout: front
+---
+
+<section class="secciones">
+<div class="container">
+  <div class="row">
+
+    {% for post in site.posts %}
+      <div class="col-md-6">
+        <div class="item">
+        <h2>
+          <span class="glyphicon glyphicon-align-left bg-primary" aria-hidden="true"></span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        {{ post.content }}
+        <div class="more-info">
+          INFORMACIÓN<br/>
+          <span class="glyphicon glyphicon-plus"></span>
+        </div>
+      </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<div ng-app="tumblrBlog">
+  <div ng-controller="ListTumblr">
+    <ul>
+      <li>{{ test }}</li>
+    </ul>
+  </div>
+</div>

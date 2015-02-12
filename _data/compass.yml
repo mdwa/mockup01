@@ -1,0 +1,10 @@
+---
+require:
+- jekyll-compass
+project_path: "/home/inaki/public_html/mdwa-mockup01"
+http_path: "/"
+css_dir: a/c
+sass_dir: _compass
+images_dir: a/i
+javascripts_dir: a/j
+fonts_dir: a/f

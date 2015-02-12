@@ -1,0 +1,129 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/images";
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
+@import "compass/css3/transform";
+
+@import "base";
+@import "colors";
+@import "typography";
+
+
+body {
+}
+
+
+.glyphicon {
+  padding: 0.5em;
+}
+
+/**
+ * Navigation
+ */
+nav.navbar-default {
+  padding-bottom: 30px;
+  border-bottom: none;
+
+  .navbar-brand {
+    img {
+      max-width: 200px;
+      margin-top: -7px;
+
+      @media (max-width: 768px) {
+        max-width: 250px;
+      }
+      @media (min-width: 992px) {
+        max-width: 300px;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    border: none;
+  }
+
+  .navbar-nav {
+    &>li {
+      &>a {
+        margin: 0;
+        &:hover {
+          @media (min-width: 768px) {
+            padding-top: 45px;
+            margin-bottom: -30px;
+          }
+        }
+      }
+    }
+  }
+
+  &.navbar-shrink {
+    .navbar-nav {
+      &>li {
+        &>a {
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Header
+ */
+header {
+  @include background(image-url("slide01.jpg") top center no-repeat);
+  background-size: cover;
+  text-align: center;
+
+  .intro-text {
+    width: 50%;
+    margin: 0 auto;
+    padding: 5em 0;
+    @include adjust-font-size-to(42px);
+    line-height: 1.8em;
+  }
+}
+
+/**
+ * Footer
+ */
+footer {
+  img {
+    width: 25%;
+  }
+}
+
+/**
+ * Secciones
+ */
+section.secciones {
+  .item {
+    position: relative;
+    overflow: hidden;
+    @include rhythm;
+    @include rhythm-borders;
+    border: none;
+    padding: 3em 2em 7em 2em;
+
+    .more-info {
+      position: absolute;
+      right: -9em;
+      bottom: -3em;
+      @include rhythm-borders;
+      padding-bottom: 4em;
+      padding-right: 7em;
+      padding-left: 7em;
+      //padding-bottom: 7em;
+      @include rotate(-45deg);
+      .glyphicon {
+      }
+    }
+  }
+}

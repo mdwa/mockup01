@@ -1,0 +1,52 @@
+@import "compass/typography";
+@import "compass/typography/vertical_rhythm";
+
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+@include establish-baseline;
+
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**
+ * Footer
+ */
+footer {
+  @include rhythm;
+  @include rhythm-borders;
+  border: none;
+}
+
+/**
+ * Secciones
+ */
+section.secciones {
+  padding-top: 3em;
+  .item {
+    @include rhythm;
+    @include rhythm-borders;
+    border: none;
+    padding: 3em 2em 7em 2em;
+
+    .more-info {
+      @include adjust-font-size-to(14px);
+      text-align: center;
+      @include rhythm-borders;
+    //border: none;
+    padding-bottom: 4em;
+    padding-right: 7em;
+    padding-left: 7em;
+    //padding-bottom: 7em;
+      .glyphicon {
+      }
+    }
+  }
+}
