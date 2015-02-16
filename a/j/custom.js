@@ -3,8 +3,8 @@ $('body').scrollspy({
     target: '.navbar-fixed-top'
 });
 
-  var app = angular.module('tumblrBlog', []);
+//var app = angular.module('tumblrBlog', []);
 
-  app.controller('ListTumblr', ['$scope', function($scope) {
-    $scope.test = "Hello";
-  }]);
+//app.controller('ListTumblrBlogController', ['$scope', function($scope) {
+//  $scope.test = "Hello";
+//}]);

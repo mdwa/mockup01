@@ -2,7 +2,7 @@
 require:
 - jekyll-compass
 project_path: "/home/inaki/public_html/mdwa-mockup01"
-http_path: "/"
+http_path: "/mockup01"
 css_dir: a/c
 sass_dir: _compass
 images_dir: a/i
